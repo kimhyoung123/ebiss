@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Pen+Script&display=swap');
+
+th, td{border:1px solid black;}
+
+h1{
+    color: #6a00ff;
+    background-color: #eeff00;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gugi', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 7px solid #6a00ff;
+
+}
+
+h2{
+    color: #0037ff;
+    font-family: 'Gugi', cursive;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+h3{
+    color: #ff00e1;
+    font-family: 'Gugi', cursive;
+    text-align: center;
+    font-size: 36px;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #00ffee;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 27px;
+}
+
+li {
+    color: #0037ff;
+    font-size: 30px;
+}
+.목차제목 {
+    color: #00ffee;
+      text-decoration: none;
+}
+.목차{
+    display: grid;
+    border-right:#3c00ff 10px solid;
+    background-color: #00ffee;
+}
+
+.메인{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.엘범{display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;}
+
+.엘범>div{text-align: center;}
+.엘범 img{width: 100%;aspect-ratio: 1 / 1;}
+
+.자기소개{padding: 10px;background-color: #00ffee;}
+
+@media(max-width:500px){
+
+  h2{color:#0037ff;}
+  .메인{display: block;}
+  ol, li{margin:0px;}
+  h1{font-size: 20px; border:none;}
+
+  .앨범{display:block;}
+  .목차{border-right:none;}
+  .텍스트{display: none;}
+  .앨범 img{width:60%; border-radius: 10%;}
+}
